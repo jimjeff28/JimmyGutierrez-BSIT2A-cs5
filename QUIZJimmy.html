@@ -1,0 +1,239 @@
+<html>
+	<head>
+		<title> QUIZ Time!
+		</title>
+		<style>
+
+			body{
+				background-image: url('Images/QuizBackground.jpg');
+				background-repeat:no-repeat;
+				background-size: cover;
+			}
+			p{
+				color: white;
+				font-size: 15px;
+				font-family: verdana;
+			}
+
+			h1{
+				color:white;
+				font-size:28px;
+				font-family: verdana;
+				background-color: black;
+				height:60px;
+				padding-top: 20px;
+			}
+
+			.ReturnButton{
+				float:left;
+				padding: 20px;
+				padding-top: 20px;
+			}
+
+		</style>
+
+	</head>
+
+	<header>
+		<div class="ReturnButton">
+		<a href="JimmyGutierrezBlog.html"><img src="Images/button_return.png" alt ="Home Button"width="100px">
+			</a>
+		</div>
+
+		<h1><b>This QUIZ contains information about Jimmy Gutierrez Jr. </b>
+		</h1>
+
+	</header>
+	<body>
+
+		<p><b>INSTRUCTION: ANSWER ALL IN CAPITAL LETTERS </b>
+		</p>
+
+		<p>1. What is his Middle Name? (Example: NORRIS)
+		</p>
+
+		<input type="text" id="input-text1" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid1()" > Show Result </button>
+		<p id="q1">
+		</p>
+
+		<p>2. What was his birth date? (Example: JANUARY 25 1986) (Follow Format)
+		</p>
+
+		<input type="text" id="input-text2" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid2()" > Show Result </button>
+		<p id="q2">
+		</p>
+
+		<p>3. What's his favorite hobby? (Example: MUSIC)
+		</p>
+
+		<input type="text" id="input-text3" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid3()" > Show Result </button>
+		<p id="q3">
+		</p>
+
+		<p>4. What's his favorite food? (Example: ADOBO)
+		</p>
+
+		<input type="text" id="input-text4" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid4()" > Show Result </button>
+		<p id="q4">
+		</p>
+
+		<p>5. What food he hates the most? (Example: KARE KARE)
+		</p>
+
+		<input type="text" id="input-text5" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid5()" > Show Result </button>
+		<p id="q5">
+		</p>
+
+		<p>6. What's his nickname? (Example: TOTO)
+		</p>
+
+		<input type="text" id="input-text6" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid6()" > Show Result </button>
+		<p id="q6">
+		</p>
+
+		<p>7. What country does he wanna go when he wants to travel in future? (Example: AMERICA)
+		</p>
+
+		<input type="text" id="input-text7" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid7()" > Show Result </button>
+		<p id="q7">
+		</p>
+
+		<p>8. What's his current course in college? (Example: ACCOUNTANCY)
+		</p>
+
+		<input type="text" id="input-text8" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid8()" > Show Result </button>
+		<p id="q8">
+		</p>
+
+		<p>9. What University is he in now? (Example: TARLAC STATE UNIVERSITY)
+		</p>
+
+		<input type="text" id="input-text9" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid9()" > Show Result </button>
+		<p id="q9">
+		</p>
+
+		<p>10. What's his dream Profession? (Example: ENGINEER)
+		</p>
+
+		<input type="text" id="input-text10" placeholder="Enter Answer Here">
+		<button type="button" onClick="switchid10()" > Show Result </button>
+		<p id="q10">
+		</p>
+
+	</body>
+	<script>
+	function switchid1(){
+		var Answer1 = document.getElementById("input-text1").value;
+		var AnsFullName="JAVONILLO";
+
+		if(Answer1 == AnsFullName){
+			document.getElementById("q1").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q1").innerHTML= "Wrong! It's JAVONILLO";
+		}
+	}
+	function switchid2(){
+		var Answer2 = document.getElementById("input-text2").value;
+		var AnsBirth="JANUARY 28 2002";
+
+		if(Answer2 == AnsBirth){
+			document.getElementById("q2").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q2").innerHTML= "Wrong! It's JANUARY 28 2002";
+		}
+	}
+	function switchid3(){
+		var Answer3 = document.getElementById("input-text3").value;
+		var AnsHobby="READING";
+		if(Answer3 == AnsHobby){
+			document.getElementById("q3").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q3").innerHTML= "Wrong! It's READING";
+		}
+	}
+	function switchid4(){
+		var Answer4 = document.getElementById("input-text4").value;
+		var AnsFavFood="SEAFOOD"
+		if(Answer4 == AnsFavFood){
+			document.getElementById("q4").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q4").innerHTML= "Wrong! It's SEAFOOD";
+		}
+	}
+	function switchid5(){
+		var Answer5 = document.getElementById("input-text5").value;
+		var AnsHateFood="COW MEAT"
+		if(Answer5 == AnsHateFood){
+			document.getElementById("q5").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q5").innerHTML= "Wrong! It's COW MEAT";
+		}
+	}
+	function switchid6(){
+		var Answer6 = document.getElementById("input-text6").value;
+		var AnsNick="JEFF"
+		if(Answer6 == AnsNick){
+			document.getElementById("q6").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q6").innerHTML= "Wrong! JEFF";
+		}
+	}
+	function switchid7(){
+		var Answer7 = document.getElementById("input-text7").value;
+		var AnsFavPlace="CHINA"
+		if(Answer7 == AnsFavPlace){
+			document.getElementById("q7").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q7").innerHTML= "Wrong! It's CHINA";
+		}
+	}
+	function switchid8(){
+		var Answer8 = document.getElementById("input-text8").value;
+		var AnsCourse="INFORMATION TECHNOLOGY"
+		if(Answer8 == AnsCourse){
+			document.getElementById("q8").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q8").innerHTML= "Wrong! It's INFORMATION TECHNOLOGY";
+		}
+	}
+	function switchid9(){
+		var Answer9 = document.getElementById("input-text9").value;
+		var AnsSchool="TARLAC AGRICULTURAL UNIVERSITY"
+		if(Answer9 == AnsSchool){
+			document.getElementById("q9").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q9").innerHTML= "Wrong! It's TARLAC AGRICULTURAL UNIVERSITY";
+		}
+	}
+	function switchid10(){
+		var Answer10 = document.getElementById("input-text10").value;
+		var AnsProf="SOLDIER"
+		if(Answer10 == AnsProf){
+			document.getElementById("q10").innerHTML= "Correct!";
+		}
+		else{
+			document.getElementById("q10").innerHTML= "Wrong! It's SOLDIER";
+		}
+	}
+
+		alert("Welcome to our Quiz! This will test how much you know about Jimmy Gutierrez!");
+	</script>
+</html>
